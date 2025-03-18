@@ -1,10 +1,14 @@
 {
   "name": "my-portfolio",
+  "homepage": "https://github.com/FadhilSAL/MyPortfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @tailwindcss/cli  -o ./src/style.css -i ./src/main.css --watch"
+    "dev": "npx @tailwindcss/cli  -o ./src/style.css -i ./src/main.css --watch",
+    "build": "react-scripts-build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +16,7 @@
   "type": "commonjs",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.14",
+    "react-scripts": "^5.0.1",
     "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
