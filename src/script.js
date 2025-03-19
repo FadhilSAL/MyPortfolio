@@ -16,6 +16,6 @@ else{
 
 hamburger.addEventListener('click',function(){
     hamburger.classList.toggle('hamburger-active');
-    hamburgerNav.classList.toggle('translate-x-40');
-    parentNav.classList.toggle('overflow-x-hidden');
+    hamburgerNav.classList.toggle('-translate-y-90')
+
 });
