@@ -258,6 +258,21 @@
   .sticky {
     position: sticky;
   }
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
+  .top-14 {
+    top: calc(var(--spacing) * 14);
+  }
+  .top-15 {
+    top: calc(var(--spacing) * 15);
+  }
+  .top-30 {
+    top: calc(var(--spacing) * 30);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .-bottom-7 {
     bottom: calc(var(--spacing) * -7);
   }
@@ -275,6 +290,9 @@
   }
   .-z-10 {
     z-index: calc(10 * -1);
+  }
+  .z-3 {
+    z-index: 3;
   }
   .z-999 {
     z-index: 999;
@@ -516,11 +534,11 @@
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
-  .h-\[0px\] {
-    height: 0px;
-  }
   .h-\[300px\] {
     height: 300px;
+  }
+  .h-\[350px\] {
+    height: 350px;
   }
   .h-screen {
     height: 100vh;
@@ -649,16 +667,8 @@
     --tw-translate-y: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
-  .-translate-y-45 {
-    --tw-translate-y: calc(var(--spacing) * -45);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .-translate-y-90 {
     --tw-translate-y: calc(var(--spacing) * -90);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .translate-y-45 {
-    --tw-translate-y: calc(var(--spacing) * 45);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-3d {
@@ -1043,9 +1053,6 @@
   }
   .overflow-y-clip {
     overflow-y: clip;
-  }
-  .overflow-y-hidden {
-    overflow-y: hidden;
   }
   .scroll-auto {
     scroll-behavior: auto;
@@ -1895,10 +1902,6 @@
   .duration-100 {
     --tw-duration: 100ms;
     transition-duration: 100ms;
-  }
-  .duration-150 {
-    --tw-duration: 150ms;
-    transition-duration: 150ms;
   }
   .duration-300 {
     --tw-duration: 300ms;
