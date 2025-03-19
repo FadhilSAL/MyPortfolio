@@ -16,10 +16,6 @@
   "type": "commonjs",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.14",
-    "react-scripts": "^5.0.1",
     "tailwindcss": "^4.0.14"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
