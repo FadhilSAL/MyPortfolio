@@ -43,7 +43,7 @@ if(localStorage.getItem('theme')=== "dark"){
 
   
   if(html.classList.contains('dark')){
-    toggleButton2.textContent = 'Terang';
+    toggleButton2.textContent = 'Mode Terang';
  }
 else{
     toggleButton2.textContent = 'Gelap'
@@ -59,10 +59,10 @@ else{
         const isDark =  html.classList.toggle('dark');
         
         if(html.classList.contains('dark')){
-             toggleButton2.textContent = 'Terang';
+             toggleButton2.textContent = ' Mode Terang';
             }
            else{
-               toggleButton2.textContent = 'Gelap'
+               toggleButton2.textContent = 'Mode Gelap'
            }
            saveTheme(isDark);
     })
