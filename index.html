@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./src/style.css">
 </head>
-<body class="font-inter ">
+<body class="font-inter dark:bg-gray-700 dark:text-white">
 
 <!--Navbar-->
 
-<header class="p-4 bg-utama w-full  duration-100 z-3 " id="NavParent">
+<header class="p-4 bg-utama w-full  duration-100 z-3 dark:bg-slate-400 opacity-80" id="NavParent">
     <div class="w-full text-white flex justify-between relative ">
-        <h1 class="font-semibold ml-4">Portfolioku</h1>
+        <h1 class="font-semibold ml-4 dark:text-utama">Portfolioku</h1>
         <nav class="w-[340px] mr-4 xs:hidden lg:block">
         
-                <ul class="flex justify-between">
-                   <li><a href="#home">Home</a></li>
-                   <li><a href="#about">About</a></li>
-                   <li><a href="#portfolioProject">Portfolio</a></li>
-                   <li><a href="#contact">Contact</a></li>
+                <ul class="flex justify-between relative">
+                   <li class="relative"><a href="#home">Home</a></li>
+                   <li class="relative"><a href="#about">About</a></li>
+                   <li class="relative"><a href="#portfolioProject">Portfolio</a></li>
+                   <li class="relative"><a href="#contact">Contact</a></li>
+                   <div class="absolute -left-20">
+                    <button id="toggleButton" class="bg-red-500   rounded-lg dark:bg-utama px-3">Gelap</button>
+                   </div>
                 </ul>
          
         </nav>
@@ -34,13 +37,16 @@
     </div>
     <div class="overflow-y-clip absolute h-[350px] right-0 top-14 lg:hidden xs:block">
 
-        <nav class=" pt-1 absolute bg-utama shadow-2xl right-0 text-white w-[150px] duration-300 z-999 opacity-100 h-[300px] -translate-y-90" id="nav-menu">
+        <nav class=" pt-1 absolute bg-utama shadow-2xl right-0 text-white w-[150px] duration-300 z-999 opacity-100 h-[300px] -translate-y-90 dark:bg-slate-400" id="nav-menu">
     
             <ul class="text-center ul-nav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolioProject">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <div class="relative">
+                    <button id="toggleButton2" class="bg-red-500 px-3  rounded-xl dark:bg-utama ">Gelap</button>
+                   </div>
              </ul>
          </nav>
     </div>
@@ -59,7 +65,7 @@
     <div class="container ">
         <div class="flex flex-wrap lg:flex-nowrap">
             <div class="w-full self-center px-4 lg:w-1/2">
-                <h1 class="text-utama">Halo semua 🖐️.saya <span class="block font-bold text-black text-base xs:text-xl lg:text-2xl">Muhammad Fadhil Akbar</span></h1>
+                <h1 class="text-utama">Halo semua 🖐️.saya <span class="block font-bold text-black dark:text-white text-base xs:text-xl lg:text-2xl">Muhammad Fadhil Akbar</span></h1>
                 <h2 class="mb-2 text-slate-500">Student & <span class="text-black">Programmer</span></h2>
                 <p class="text-slate-400 mb-5">"Menjadi Programmer Sangatlah Menyenangkan"</p>
                 <a href="#" class="text-base font-semibold text-white bg-utama px-8 py-3 rounded-2xl hover:shadow-xl hover:opacity-80 transition-all duration-400"> Hubungi Saya</a>
@@ -104,7 +110,7 @@
 <!--Portoflio-->
 
 
-<section class="bg-slate-100 pb-2" id="portfolioProject">
+<section class="bg-slate-100 pb-2 dark:bg-slate-700" id="portfolioProject">
     <div class="flex flex-wrap ">
           <h2  class="text-utama text-lg font-semibold w-full text-center pt-36">Portfolio</h2>
           <h2 class="text-4xl font-semibold pt-4 w-full text-center">Project Terbaru</h2>
@@ -147,7 +153,7 @@
             </div>
             <div class="px-4">
              <label for="13" class="text-utama font-bold ">Pesan</label>
-         <textarea name="pesan" id="l3" class="h-24 active:outline-none active:ring-1 active:ring-utama w-full bg-slate-300 rounded-md"></textarea>
+         <textarea name="pesan" id="l3" class="h-24 active:outline-none active:ring-1 active:ring-utama w-full bg-slate-300 rounded-md dark:bg-white dark:text-black"></textarea>
             </div>
             <div class="py-2 px-4">
 
